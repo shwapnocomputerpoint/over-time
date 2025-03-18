@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কর্মচারী ওভারটাইম হিসাব</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>কর্মচারী ওভারটাইম হিসাব</h2>
+        <form id="overtimeForm">
+            <label for="empId">কর্মচারী আইডি:</label>
+            <input type="text" id="empId" required>
+
+            <label for="name">কর্মচারীর নাম:</label>
+            <input type="text" id="name" required>
+
+            <label for="startTime">শুরুর সময়:</label>
+            <input type="time" id="startTime" required>
+
+            <label for="endTime">শেষ সময়:</label>
+            <input type="time" id="endTime" required>
+
+            <label for="shiftBreak">শিফট বিরতি (মিনিট):</label>
+            <input type="number" id="shiftBreak" required>
+
+            <label for="mealBreak">খাবার বিরতি (মিনিট):</label>
+            <input type="number" id="mealBreak" required>
+
+            <button type="submit">হিসাব করুন</button>
+        </form>
+
+        <table id="overtimeTable">
+            <thead>
+                <tr>
+                    <th>ক্রমিক নং</th>
+                    <th>নাম</th>
+                    <th>কর্মচারী আইডি</th>
+                    <th>শুরু সময়</th>
+                    <th>শেষ সময়</th>
+                    <th>মোট কাজ</th>
+                    <th>শিফট বিরতি</th>
+                    <th>খাবার বিরতি</th>
+                    <th>সঠিক কাজ</th>
+                    <th>ওভারটাইম</th>
+                    <th>প্রতি ঘণ্টায় মজুরি</th>
+                    <th>ওভারটাইম রেট</th>
+                    <th>মোট মজুরি</th>
+                    <th>এডিট</th>
+                    <th>ডিলেট</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- তথ্য এখানে প্রদর্শিত হবে -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
